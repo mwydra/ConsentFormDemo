@@ -1,0 +1,28 @@
+<html>
+  <script src="https://pr1746516305705.my.site.com/pc/s/lightning/lightning.out.js"></script>
+
+  <div data-lightning-out="true"></div>
+
+  <script>
+    const appName = 'c.BootsConsentForm';
+    const componentName = 'consentForm';
+    const lightningEndpoint = 'https://pr1746516305705.my.site.com/pc/s/';
+    const targetElement = document.querySelector('[data-lightning-out]');
+    const componentAttributes = {};
+
+    $Lightning.use(
+      appName,
+      function(){
+        $Lightning.createComponent(
+          componentName,
+          componentAttributes,
+          targetElement,
+          function(component) {
+            console.log('Component created successfully!');
+          }
+          );
+      },
+      lightningEndpoint,
+    );
+  </script>
+</html>
